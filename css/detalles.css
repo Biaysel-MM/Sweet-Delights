@@ -1,0 +1,125 @@
+/* === PÁGINAS DE PRODUCTO === */
+.product-hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-top: 80px;
+}
+
+.product-hero__title {
+    font-size: 4rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.product-detail {
+    padding: 4rem 0;
+    background: var(--pure-white);
+}
+
+.product-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.product-gallery {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-main-img {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.product-thumbnails {
+    display: flex;
+    gap: 1rem;
+}
+
+.product-thumbnails img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.product-thumbnails img:hover {
+    transform: scale(1.1);
+}
+
+.product-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-subtitle {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.product-full-desc {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.product-features ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.product-features li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.product-features i {
+    color: var(--accent-color);
+    width: 20px;
+}
+
+.variant-select, .add-to-cart {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.add-to-cart {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.add-to-cart:hover {
+    background: var(--primary-color);
+    color: var(--text-dark);
+}
+.tambienGustar{
+    max-width: 500px;
+}
+.related-products, .product-story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-hero__title {
+        font-size: 2.5rem;
+    }
+}
